@@ -1,0 +1,19 @@
+@import 'colors';
+@import 'fonts';
+
+a.btn-primary {
+  &,
+  &:active,
+  &:hover,
+  &:visited {
+    padding: 10px 40px;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 1rem auto;
+    background-color: $rose;
+    color: $brown;
+    border: none;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+}

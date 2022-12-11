@@ -1,0 +1,74 @@
+@import 'colors';
+@import 'fonts';
+
+header {
+  display: flex;
+  background-color: #cb6139;
+  background-image: url(../img/flowers-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-blend-mode: hard-light;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    width: 70%;
+    margin: 2rem auto;
+  }
+
+  .intro-text {
+    font-family: $font-secondary;
+    font-size: 3.4rem;
+    color: $color-primary;
+  }
+
+  .days-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: unset;
+    font-size: 14rem;
+    font-family: $font-display;
+    font-style: italic;
+    font-weight: bolder;
+    color: $color-bg;
+    text-shadow: 0 4px 28px #b06562;
+  
+    &::before {
+      content: '';
+      background-image: url(img/days.png);
+      width: 300px;
+      height: 300px;
+      position: absolute;
+      background-size: contain;
+    }
+  
+    &::after {
+      content: 'days left';
+      margin-top: -70px;
+      font-size: 3rem;
+      font-family: $font-primary;
+    }
+  }
+
+  .names {
+    margin-top: 0;
+    padding-top: 1rem;
+    font-family: $font-calligraphic;
+    font-size: 9rem;
+    color: $color-primary;
+    line-height: 160px;
+  }
+
+}
+
+.header .arrow-down {
+  height: 150px;
+  width: 200px;
+  position: relative;
+  top: 180px;
+}

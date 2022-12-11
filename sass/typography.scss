@@ -1,0 +1,13 @@
+@import 'colors';
+@import 'fonts';
+
+h1, h2 {
+  font-family: $font-secondary;
+  font-size: 2rem;
+  color: $black;
+}
+
+p {
+  font-size: 1rem;
+  font-family: $font-primary;
+}

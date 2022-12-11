@@ -1,0 +1,66 @@
+@import 'reset';
+@import 'colors';
+@import 'fonts';
+@import 'typography';
+@import 'header';
+@import 'nav';
+@import 'buttons';
+
+
+body {
+  background-color: $color-bg;
+  text-align: center;
+  font-size: 1rem;
+}
+
+main {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+section {
+  // padding: 5rem 5rem 0 5rem;
+
+  span {
+    // font-size: 7rem;
+    color: $brown;
+  }
+
+  .icon {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .separator {
+    margin: 1rem auto;
+    max-width: 180px;
+  }
+
+}
+
+.story {
+  strong {
+    color: $brown;
+  }
+  .rome-caption {
+    margin-top: 8rem;
+  }
+}
+
+.when {
+  .month, .number {
+    font-family: 'La Belle Aurore', serif;
+    // font-size: 5rem;
+  }
+}
+
+.where {
+  p {
+    // font-size: 5rem;
+    color: $brown;
+  }
+}
+
+img {
+  width: 100%;
+}

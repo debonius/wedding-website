@@ -1,0 +1,29 @@
+@import 'colors';
+@import 'fonts';
+
+nav {
+  z-index: 9;
+  position: absolute;
+  top: 3rem;
+
+  ul {
+    display: flex;
+    justify-content: center;
+    gap: 55px;
+  }
+
+  li {
+    list-style-type: none;
+  }
+
+  a,
+  a:focus,
+  a:hover,
+  a:active {
+    text-decoration: none;
+    color: $color-primary;
+    font-size: clamp(4rem, 5rem, 6rem);
+    font-family: $font-primary;
+  }
+
+}
