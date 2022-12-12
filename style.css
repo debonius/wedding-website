@@ -325,6 +325,11 @@ section .icon {
     margin: 0 auto;
   }
 }
+@media screen and (min-width: 1024px) and (orientation: landscape) {
+  .photos-wrap .photo {
+    width: 80%;
+  }
+}
 @media screen and (min-width: 1180px) and (orientation: landscape) {
   .photos-wrap .photo {
     width: 350px;
