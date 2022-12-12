@@ -1,12 +1,14 @@
 @import 'colors';
 @import 'fonts';
 
-header {
+.header {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
+  padding: 2rem;
+  gap: 15%;
   margin-bottom: 3rem;
   background-color: #cb6139;
   background-image: url(../img/flowers-bg.jpg);
@@ -14,6 +16,13 @@ header {
   background-position: center;
   background-repeat: no-repeat;
   background-blend-mode: hard-light;
+  @media screen and (orientation: landscape) {
+    background-size: 210%;
+  }
+
+  p {
+    margin: 0;
+  }
 
   img {
     width: 70%;
@@ -22,7 +31,7 @@ header {
 
   .intro-text {
     font-family: $font-secondary;
-    font-size: 3.4rem;
+    font-size: 1rem;
     color: $color-primary;
   }
 
@@ -32,37 +41,34 @@ header {
     justify-content: center;
     align-items: center;
     position: unset;
-    font-size: 14rem;
     font-family: $font-display;
     font-style: italic;
     font-weight: bolder;
+    font-size: 5rem;
     color: $color-bg;
     text-shadow: 0 4px 28px #b06562;
-  
     &::before {
       content: '';
       background-image: url(img/days.png);
-      width: 300px;
-      height: 300px;
+      background-repeat: no-repeat;
+      width: 200px;
+      height: 200px;
       position: absolute;
       background-size: contain;
     }
-  
-    &::after {
-      content: 'days left';
+    & .label {
+      // content: 'days left';
       margin-top: -70px;
-      font-size: 3rem;
+      font-size: 1rem;
       font-family: $font-primary;
     }
   }
 
   .names {
-    margin-top: 0;
-    padding-top: 1rem;
     font-family: $font-calligraphic;
-    font-size: 9rem;
+    font-size: 3rem;
     color: $color-primary;
-    line-height: 160px;
+    // line-height: 160px;
   }
 
 }
