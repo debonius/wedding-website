@@ -47,10 +47,10 @@ section {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  @media screen and (min-width: 1180px) and (orientation: landscape) {
-    gap: 1rem;
-    flex-direction: row;
-  }
+  // @media screen and (min-width: 1180px) and (orientation: landscape) {
+  //   gap: 1rem;
+  //   flex-direction: row;
+  // }
 
   .photo {
     border: 1px solid white;
@@ -64,8 +64,8 @@ section {
     @media screen and (min-width: 1024px) and (orientation: landscape) {
       width: 80%;
     }
-    @media screen and (min-width: 1180px) and (orientation: landscape) {
-      width: 350px;
-    }
+    // @media screen and (min-width: 1180px) and (orientation: landscape) {
+    //   width: 350px;
+    // }
   }
 }
