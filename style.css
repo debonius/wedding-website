@@ -87,6 +87,11 @@ span {
     font-size: 2rem;
   }
 }
+@media screen and (min-width: 653px) and (max-height: 280px) and (orientation: landscape) {
+  .header .intro-text {
+    margin-top: 15px;
+  }
+}
 .header .names {
   display: block;
   font-family: "Mea Culpa", cursive;
@@ -101,6 +106,11 @@ span {
 @media screen and (min-width: 1024px) and (orientation: landscape) {
   .header .names {
     font-size: 5rem;
+  }
+}
+@media screen and (min-width: 1024px) and (max-height: 600px) and (orientation: landscape) {
+  .header .names {
+    margin-bottom: 40px;
   }
 }
 .header .countdown {
@@ -185,6 +195,11 @@ span {
 nav {
   width: 100%;
 }
+@media screen and (min-width: 1280px) {
+  nav {
+    width: 30%;
+  }
+}
 nav ul {
   display: flex;
   width: 100%;
@@ -246,7 +261,7 @@ body {
 
 main {
   max-width: 1280px;
-  margin: 2rem;
+  margin: 2rem auto;
 }
 
 section span {
@@ -280,6 +295,12 @@ section .icon {
   flex-direction: column;
   gap: 2rem;
 }
+@media screen and (min-width: 1180px) and (orientation: landscape) {
+  .photos-wrap {
+    gap: 1rem;
+    flex-direction: row;
+  }
+}
 .photos-wrap .photo {
   border: 1px solid white;
   border-radius: 15px;
@@ -290,6 +311,11 @@ section .icon {
     width: 360px;
     height: auto;
     margin: 0 auto;
+  }
+}
+@media screen and (min-width: 1180px) and (orientation: landscape) {
+  .photos-wrap .photo {
+    width: 350px;
   }
 }
 

@@ -34,6 +34,9 @@
     @media screen and (min-width: 1024px) and (orientation: landscape) {
       font-size: 2rem;
     }
+    @media screen and (min-width: 653px) and (max-height: 280px) and (orientation: landscape) {
+      margin-top: 15px;
+    }
   }
 
   .names {
@@ -47,6 +50,10 @@
     @media screen and (min-width: 1024px) and (orientation: landscape) {
       font-size: 5rem;
     }
+    @media screen and (min-width: 1024px) and (max-height: 600px) and (orientation: landscape) {
+      margin-bottom: 40px;
+    }
+
   }
 
   .countdown {

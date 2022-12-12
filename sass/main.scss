@@ -14,7 +14,7 @@ body {
 
 main {
   max-width: 1280px;
-  margin: 2rem;
+  margin: 2rem auto;
 }
 
 section {
@@ -47,6 +47,10 @@ section {
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  @media screen and (min-width: 1180px) and (orientation: landscape) {
+    gap: 1rem;
+    flex-direction: row;
+  }
 
   .photo {
     border: 1px solid white;
@@ -56,6 +60,9 @@ section {
       width: 360px;
       height: auto;
       margin: 0 auto;
+    }
+    @media screen and (min-width: 1180px) and (orientation: landscape) {
+      width: 350px;
     }
   }
 }
