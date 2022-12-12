@@ -4,7 +4,7 @@
 .header {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   height: 100vh;
   padding: 1rem;
@@ -28,6 +28,19 @@
     font-style: italic;
     font-size: 1rem;
     color: $color-primary;
+    @media screen and (min-width: 768px) and (orientation: portrait) {
+      font-size: 2rem;
+    }
+  }
+
+  .names {
+    display: block;
+    font-family: $font-calligraphic;
+    font-size: 3rem;
+    color: $color-primary;
+    @media screen and (min-width: 768px) and (orientation: portrait) {
+      font-size: 5rem;
+    }
   }
 
   .countdown {
@@ -35,10 +48,15 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
     .flowers-frame {
       position: absolute;
       width: 200px;
+      @media screen and (min-width: 768px) and (orientation: portrait) {
+        width: 400px;
+      }
     }
+
     .days {
       position: relative;
       top: 37px;
@@ -49,7 +67,13 @@
       font-size: 5rem;
       color: $color-bg;
       text-shadow: 0 4px 28px #b06562;
+      @media screen and (min-width: 768px) and (orientation: portrait) {
+        font-size: 10rem;
+        top: 60px;
+        left: -10px;
+      }
     }
+
     .label {
       position: relative;
       bottom: 47px;
@@ -59,14 +83,13 @@
       font-size: 1.2rem;
       font-family: $font-primary;
       color: #b06562;
+      @media screen and (min-width: 768px) and (orientation: portrait) {
+        font-size: 2rem;
+        line-height: 47px;
+        bottom: 90px;
+        left: 170px;
+      }
     }
-  }
-
-  .names {
-    display: block;
-    font-family: $font-calligraphic;
-    font-size: 3rem;
-    color: $color-primary;
   }
 
 }

@@ -22,16 +22,26 @@ p {
   font-size: 1rem;
   font-family: "La Belle Aurore", cursive;
 }
+@media screen and (min-width: 768px) and (orientation: portrait) {
+  p {
+    font-size: 2rem;
+  }
+}
 
 span {
   font-family: "La Belle Aurore", cursive;
   color: #5e4019;
 }
+@media screen and (min-width: 768px) and (orientation: portrait) {
+  span {
+    font-size: 2.5rem;
+  }
+}
 
 .header {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   height: 100vh;
   padding: 1rem;
@@ -57,6 +67,22 @@ span {
   font-size: 1rem;
   color: #893720;
 }
+@media screen and (min-width: 768px) and (orientation: portrait) {
+  .header .intro-text {
+    font-size: 2rem;
+  }
+}
+.header .names {
+  display: block;
+  font-family: "Mea Culpa", cursive;
+  font-size: 3rem;
+  color: #893720;
+}
+@media screen and (min-width: 768px) and (orientation: portrait) {
+  .header .names {
+    font-size: 5rem;
+  }
+}
 .header .countdown {
   display: flex;
   flex-direction: column;
@@ -66,6 +92,11 @@ span {
 .header .countdown .flowers-frame {
   position: absolute;
   width: 200px;
+}
+@media screen and (min-width: 768px) and (orientation: portrait) {
+  .header .countdown .flowers-frame {
+    width: 400px;
+  }
 }
 .header .countdown .days {
   position: relative;
@@ -78,6 +109,13 @@ span {
   color: #faebd7;
   text-shadow: 0 4px 28px #b06562;
 }
+@media screen and (min-width: 768px) and (orientation: portrait) {
+  .header .countdown .days {
+    font-size: 10rem;
+    top: 60px;
+    left: -10px;
+  }
+}
 .header .countdown .label {
   position: relative;
   bottom: 47px;
@@ -88,11 +126,13 @@ span {
   font-family: "La Belle Aurore", cursive;
   color: #b06562;
 }
-.header .names {
-  display: block;
-  font-family: "Mea Culpa", cursive;
-  font-size: 3rem;
-  color: #893720;
+@media screen and (min-width: 768px) and (orientation: portrait) {
+  .header .countdown .label {
+    font-size: 2rem;
+    line-height: 47px;
+    bottom: 90px;
+    left: 170px;
+  }
 }
 
 .header .arrow-down {
@@ -122,6 +162,14 @@ nav a:active {
   font-size: 1.5rem;
   font-family: "La Belle Aurore", cursive;
 }
+@media screen and (min-width: 768px) and (orientation: portrait) {
+  nav a,
+nav a:focus,
+nav a:hover,
+nav a:active {
+    font-size: 3rem;
+  }
+}
 
 a.btn-primary, a.btn-primary:active, a.btn-primary:hover, a.btn-primary:visited {
   padding: 10px 30px;
@@ -134,6 +182,12 @@ a.btn-primary, a.btn-primary:active, a.btn-primary:hover, a.btn-primary:visited 
   border: none;
   font-family: "Josefin sans", sans-serif;
   text-decoration: none;
+}
+@media screen and (min-width: 768px) and (orientation: portrait) {
+  a.btn-primary, a.btn-primary:active, a.btn-primary:hover, a.btn-primary:visited {
+    width: 400px;
+    font-size: 1.5rem;
+  }
 }
 
 body {
@@ -157,6 +211,11 @@ section .icon {
 
 .story strong {
   color: #5e4019;
+}
+@media screen and (min-width: 768px) and (orientation: portrait) {
+  .story strong {
+    font-size: 2.5rem;
+  }
 }
 
 .separator {

@@ -30,6 +30,9 @@ section {
 .story {
   strong {
     color: $brown;
+    @media screen and (min-width: 768px) and (orientation: portrait) {
+      font-size: 2.5rem;
+    }
   }
 }
 
