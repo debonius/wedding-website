@@ -208,30 +208,26 @@ nav ul {
 nav li {
   list-style-type: none;
 }
-nav a,
-nav a:focus,
-nav a:hover,
-nav a:active {
+nav a, nav a:focus, nav a:hover, nav a:active {
   text-decoration: none;
   color: #893720;
   font-size: 1.5rem;
   font-family: "La Belle Aurore", cursive;
+  cursor: pointer;
 }
 @media screen and (min-width: 768px) and (orientation: portrait) {
-  nav a,
-nav a:focus,
-nav a:hover,
-nav a:active {
+  nav a, nav a:focus, nav a:hover, nav a:active {
     font-size: 3rem;
   }
 }
 @media screen and (min-width: 1024px) and (orientation: landscape) {
-  nav a,
-nav a:focus,
-nav a:hover,
-nav a:active {
+  nav a, nav a:focus, nav a:hover, nav a:active {
     font-size: 3rem;
   }
+}
+nav a:hover {
+  color: #faebd7;
+  text-shadow: 0 4px 28px #b06562;
 }
 
 a.btn-primary, a.btn-primary:active, a.btn-primary:hover, a.btn-primary:visited {
@@ -243,6 +239,7 @@ a.btn-primary, a.btn-primary:active, a.btn-primary:hover, a.btn-primary:visited 
   background-color: #ffc2b0;
   color: #5e4019;
   border: none;
+  box-shadow: 0 4px 28px #ffc2b0;
   font-family: "Josefin sans", sans-serif;
   text-decoration: none;
 }
@@ -251,6 +248,9 @@ a.btn-primary, a.btn-primary:active, a.btn-primary:hover, a.btn-primary:visited 
     width: 400px;
     font-size: 1.5rem;
   }
+}
+a.btn-primary:hover {
+  box-shadow: 0 4px 28px #e09b86;
 }
 
 body {
