@@ -318,7 +318,7 @@ section .icon {
   border-radius: 15px;
   box-shadow: 5px 7px 20px rgba(94, 64, 25, 0.6);
 }
-@media (orientation: landscape) {
+@media screen and (orientation: landscape) {
   .photos-wrap .photo {
     width: 360px;
     height: auto;
