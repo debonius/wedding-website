@@ -8,6 +8,12 @@ h1, h2 {
 }
 
 p {
+  margin: 2rem auto;
   font-size: 1rem;
   font-family: $font-primary;
+}
+
+span {
+  font-family: $font-primary;
+  color: $brown;
 }
