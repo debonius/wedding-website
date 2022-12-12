@@ -25,6 +25,7 @@
 
   .intro-text {
     font-family: $font-secondary;
+    font-style: italic;
     font-size: 1rem;
     color: $color-primary;
   }
@@ -62,10 +63,10 @@
   }
 
   .names {
+    display: block;
     font-family: $font-calligraphic;
     font-size: 3rem;
     color: $color-primary;
-    // line-height: 160px;
   }
 
 }

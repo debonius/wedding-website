@@ -53,6 +53,7 @@ span {
 }
 .header .intro-text {
   font-family: "Cardo", serif;
+  font-style: italic;
   font-size: 1rem;
   color: #893720;
 }
@@ -88,6 +89,7 @@ span {
   color: #b06562;
 }
 .header .names {
+  display: block;
   font-family: "Mea Culpa", cursive;
   font-size: 3rem;
   color: #893720;
@@ -100,10 +102,13 @@ span {
   top: 180px;
 }
 
+nav {
+  width: 100%;
+}
 nav ul {
   display: flex;
-  justify-content: center;
-  gap: 55px;
+  width: 100%;
+  justify-content: space-around;
 }
 nav li {
   list-style-type: none;
