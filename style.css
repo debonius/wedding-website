@@ -137,7 +137,7 @@ a.btn-primary, a.btn-primary:active, a.btn-primary:hover, a.btn-primary:visited 
 }
 
 body {
-  background-color: #faebd7;
+  background: linear-gradient(90deg, #faebd7 0%, #f1d5af 100%);
   text-align: center;
   font-size: 1rem;
 }

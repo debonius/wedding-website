@@ -7,7 +7,7 @@
 @import 'buttons';
 
 body {
-  background-color: $color-bg;
+  background: linear-gradient(90deg, $color-bg 0%, #f1d5af 100%);
   text-align: center;
   font-size: 1rem;
 }
