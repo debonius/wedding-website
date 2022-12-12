@@ -33,6 +33,9 @@ section {
     @media screen and (min-width: 768px) and (orientation: portrait) {
       font-size: 2.5rem;
     }
+    @media screen and (min-width: 1024px) and (orientation: landscape) {
+      font-size: 2.1rem;
+    }
   }
 }
 

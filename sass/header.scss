@@ -31,6 +31,9 @@
     @media screen and (min-width: 768px) and (orientation: portrait) {
       font-size: 2rem;
     }
+    @media screen and (min-width: 1024px) and (orientation: landscape) {
+      font-size: 2rem;
+    }
   }
 
   .names {
@@ -39,6 +42,9 @@
     font-size: 3rem;
     color: $color-primary;
     @media screen and (min-width: 768px) and (orientation: portrait) {
+      font-size: 5rem;
+    }
+    @media screen and (min-width: 1024px) and (orientation: landscape) {
       font-size: 5rem;
     }
   }
@@ -53,6 +59,9 @@
       position: absolute;
       width: 200px;
       @media screen and (min-width: 768px) and (orientation: portrait) {
+        width: 400px;
+      }
+      @media screen and (min-width: 1024px) and (orientation: landscape) {
         width: 400px;
       }
     }
@@ -72,6 +81,11 @@
         top: 60px;
         left: -10px;
       }
+      @media screen and (min-width: 1024px) and (orientation: landscape) {
+        font-size: 10rem;
+        top: 60px;
+        left: -10px;
+      }
     }
 
     .label {
@@ -84,6 +98,12 @@
       font-family: $font-primary;
       color: #b06562;
       @media screen and (min-width: 768px) and (orientation: portrait) {
+        font-size: 2rem;
+        line-height: 47px;
+        bottom: 90px;
+        left: 170px;
+      }
+      @media screen and (min-width: 1024px) and (orientation: landscape) {
         font-size: 2rem;
         line-height: 47px;
         bottom: 90px;

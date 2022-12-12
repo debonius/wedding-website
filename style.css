@@ -27,6 +27,11 @@ p {
     font-size: 2rem;
   }
 }
+@media screen and (min-width: 1024px) and (orientation: landscape) {
+  p {
+    font-size: 1.7rem;
+  }
+}
 
 span {
   font-family: "La Belle Aurore", cursive;
@@ -35,6 +40,11 @@ span {
 @media screen and (min-width: 768px) and (orientation: portrait) {
   span {
     font-size: 2.5rem;
+  }
+}
+@media screen and (min-width: 1024px) and (orientation: landscape) {
+  span {
+    font-size: 2.3rem;
   }
 }
 
@@ -72,6 +82,11 @@ span {
     font-size: 2rem;
   }
 }
+@media screen and (min-width: 1024px) and (orientation: landscape) {
+  .header .intro-text {
+    font-size: 2rem;
+  }
+}
 .header .names {
   display: block;
   font-family: "Mea Culpa", cursive;
@@ -79,6 +94,11 @@ span {
   color: #893720;
 }
 @media screen and (min-width: 768px) and (orientation: portrait) {
+  .header .names {
+    font-size: 5rem;
+  }
+}
+@media screen and (min-width: 1024px) and (orientation: landscape) {
   .header .names {
     font-size: 5rem;
   }
@@ -94,6 +114,11 @@ span {
   width: 200px;
 }
 @media screen and (min-width: 768px) and (orientation: portrait) {
+  .header .countdown .flowers-frame {
+    width: 400px;
+  }
+}
+@media screen and (min-width: 1024px) and (orientation: landscape) {
   .header .countdown .flowers-frame {
     width: 400px;
   }
@@ -116,6 +141,13 @@ span {
     left: -10px;
   }
 }
+@media screen and (min-width: 1024px) and (orientation: landscape) {
+  .header .countdown .days {
+    font-size: 10rem;
+    top: 60px;
+    left: -10px;
+  }
+}
 .header .countdown .label {
   position: relative;
   bottom: 47px;
@@ -127,6 +159,14 @@ span {
   color: #b06562;
 }
 @media screen and (min-width: 768px) and (orientation: portrait) {
+  .header .countdown .label {
+    font-size: 2rem;
+    line-height: 47px;
+    bottom: 90px;
+    left: 170px;
+  }
+}
+@media screen and (min-width: 1024px) and (orientation: landscape) {
   .header .countdown .label {
     font-size: 2rem;
     line-height: 47px;
@@ -163,6 +203,14 @@ nav a:active {
   font-family: "La Belle Aurore", cursive;
 }
 @media screen and (min-width: 768px) and (orientation: portrait) {
+  nav a,
+nav a:focus,
+nav a:hover,
+nav a:active {
+    font-size: 3rem;
+  }
+}
+@media screen and (min-width: 1024px) and (orientation: landscape) {
   nav a,
 nav a:focus,
 nav a:hover,
@@ -215,6 +263,11 @@ section .icon {
 @media screen and (min-width: 768px) and (orientation: portrait) {
   .story strong {
     font-size: 2.5rem;
+  }
+}
+@media screen and (min-width: 1024px) and (orientation: landscape) {
+  .story strong {
+    font-size: 2.1rem;
   }
 }
 
