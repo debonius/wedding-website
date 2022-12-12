@@ -1,4 +1,4 @@
-const daysLeft = document.querySelector('.days-left');
+const daysLeft = document.querySelector('.days');
 const currentDate = new Date();
 const weddingDate = new Date("01-08-2023");
 

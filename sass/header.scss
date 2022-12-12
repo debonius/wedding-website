@@ -4,11 +4,10 @@
 .header {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   height: 100vh;
-  padding: 2rem;
-  gap: 15%;
+  padding: 1rem;
   margin-bottom: 3rem;
   background-color: #cb6139;
   background-image: url(../img/flowers-bg.jpg);
@@ -24,43 +23,41 @@
     margin: 0;
   }
 
-  img {
-    width: 70%;
-    margin: 2rem auto;
-  }
-
   .intro-text {
     font-family: $font-secondary;
     font-size: 1rem;
     color: $color-primary;
   }
 
-  .days-left {
+  .countdown {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    position: unset;
-    font-family: $font-display;
-    font-style: italic;
-    font-weight: bolder;
-    font-size: 5rem;
-    color: $color-bg;
-    text-shadow: 0 4px 28px #b06562;
-    &::before {
-      content: '';
-      background-image: url(img/days.png);
-      background-repeat: no-repeat;
-      width: 200px;
-      height: 200px;
+    .flowers-frame {
       position: absolute;
-      background-size: contain;
+      width: 200px;
     }
-    & .label {
-      // content: 'days left';
-      margin-top: -70px;
-      font-size: 1rem;
+    .days {
+      position: relative;
+      top: 37px;
+      left: -4px;
+      font-family: $font-display;
+      font-style: italic;
+      font-weight: bolder;
+      font-size: 5rem;
+      color: $color-bg;
+      text-shadow: 0 4px 28px #b06562;
+    }
+    .label {
+      position: relative;
+      bottom: 47px;
+      left: 92px;
+      line-height: 27px;
+      transform: rotate(338deg);
+      font-size: 1.2rem;
       font-family: $font-primary;
+      color: #b06562;
     }
   }
 

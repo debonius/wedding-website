@@ -31,11 +31,10 @@ span {
 .header {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   height: 100vh;
-  padding: 2rem;
-  gap: 15%;
+  padding: 1rem;
   margin-bottom: 3rem;
   background-color: #cb6139;
   background-image: url(../img/flowers-bg.jpg);
@@ -52,21 +51,25 @@ span {
 .header p {
   margin: 0;
 }
-.header img {
-  width: 70%;
-  margin: 2rem auto;
-}
 .header .intro-text {
   font-family: "Cardo", serif;
   font-size: 1rem;
   color: #893720;
 }
-.header .days-left {
+.header .countdown {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  position: unset;
+}
+.header .countdown .flowers-frame {
+  position: absolute;
+  width: 200px;
+}
+.header .countdown .days {
+  position: relative;
+  top: 37px;
+  left: -4px;
   font-family: "Josefin sans", sans-serif;
   font-style: italic;
   font-weight: bolder;
@@ -74,19 +77,15 @@ span {
   color: #faebd7;
   text-shadow: 0 4px 28px #b06562;
 }
-.header .days-left::before {
-  content: "";
-  background-image: url(img/days.png);
-  background-repeat: no-repeat;
-  width: 200px;
-  height: 200px;
-  position: absolute;
-  background-size: contain;
-}
-.header .days-left .label {
-  margin-top: -70px;
-  font-size: 1rem;
+.header .countdown .label {
+  position: relative;
+  bottom: 47px;
+  left: 92px;
+  line-height: 27px;
+  transform: rotate(338deg);
+  font-size: 1.2rem;
   font-family: "La Belle Aurore", cursive;
+  color: #b06562;
 }
 .header .names {
   font-family: "Mea Culpa", cursive;
