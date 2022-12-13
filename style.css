@@ -314,7 +314,6 @@ section .icon {
   gap: 2rem;
 }
 .photos-wrap .photo {
-  max-height: 80vh;
   width: auto;
   max-height: 600px;
   border: 1px solid white;
