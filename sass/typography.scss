@@ -9,8 +9,13 @@ h1, h2 {
 
 p {
   margin: 2rem auto;
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-family: $font-primary;
+
+  @media (orientation: landscape) {
+    font-size: 1rem;
+  }
+
   @media screen and (min-width: 768px) and (orientation: portrait) {
     font-size: 2rem;
   }

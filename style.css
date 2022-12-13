@@ -19,8 +19,13 @@ h1, h2 {
 
 p {
   margin: 2rem auto;
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-family: "La Belle Aurore", cursive;
+}
+@media (orientation: landscape) {
+  p {
+    font-size: 1rem;
+  }
 }
 @media screen and (min-width: 768px) and (orientation: portrait) {
   p {
@@ -311,6 +316,7 @@ section .icon {
 .photos-wrap .photo {
   max-height: 80vh;
   width: auto;
+  max-height: 600px;
   border: 1px solid white;
   border-radius: 15px;
   box-shadow: 5px 7px 20px rgba(94, 64, 25, 0.6);
