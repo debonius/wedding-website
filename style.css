@@ -290,6 +290,9 @@ section .icon {
   height: 20px;
 }
 
+.story ul {
+  text-align: left;
+}
 .story strong {
   color: #5e4019;
 }

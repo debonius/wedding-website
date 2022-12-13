@@ -29,6 +29,9 @@ section {
 }
 
 .story {
+  ul {
+    text-align: left;
+  }
   strong {
     color: $brown;
     @media screen and (min-width: 768px) and (orientation: portrait) {
