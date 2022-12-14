@@ -12,9 +12,9 @@ let diff = Math.round( ( ( today - endDate ) / (1000*3600*24) ) );
 diff *= -1;
 daysLeft.innerHTML = diff;
 
-console.log(today)
-console.log(endDate);
-console.log(diff)
+// console.log(today)
+// console.log(endDate);
+// console.log(diff)
 
 
 if (diff == 1) {
