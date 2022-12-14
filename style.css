@@ -80,6 +80,17 @@ ul li {
 @media screen and (orientation: landscape) {
   .header {
     background-size: 210%;
+    background-position: top center;
+  }
+}
+@media screen and (min-width: 414px) and (orientation: portrait) {
+  .header {
+    justify-content: space-evenly;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .header {
+    justify-content: space-between;
   }
 }
 .header p {
@@ -90,6 +101,16 @@ ul li {
   font-style: italic;
   font-size: 1rem;
   color: #893720;
+}
+@media screen and (min-width: 390px) and (orientation: portrait) {
+  .header .intro-text {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (min-width: 414px) and (orientation: portrait) {
+  .header .intro-text {
+    font-size: 2rem;
+  }
 }
 @media screen and (min-width: 768px) and (orientation: portrait) {
   .header .intro-text {
@@ -112,9 +133,20 @@ ul li {
   font-size: 3rem;
   color: #893720;
 }
-@media screen and (min-width: 768px) and (orientation: portrait) {
+@media screen and (min-width: 390px) and (orientation: portrait) {
   .header .names {
     font-size: 5rem;
+  }
+}
+@media screen and (min-width: 414px) and (orientation: portrait) {
+  .header .names {
+    font-size: 5rem;
+    line-height: 1.2;
+  }
+}
+@media screen and (min-width: 768px) and (orientation: portrait) {
+  .header .names {
+    font-size: 8rem;
   }
 }
 @media screen and (min-width: 1024px) and (orientation: landscape) {
@@ -136,6 +168,11 @@ ul li {
 .header .countdown .flowers-frame {
   position: absolute;
   width: 200px;
+}
+@media screen and (min-width: 390px) and (orientation: portrait) {
+  .header .countdown .flowers-frame {
+    width: 270px;
+  }
 }
 @media screen and (min-width: 768px) and (orientation: portrait) {
   .header .countdown .flowers-frame {
@@ -162,10 +199,15 @@ ul li {
   animation-iteration-count: infinite;
   animation-direction: alternate;
 }
+@media screen and (min-width: 390px) and (orientation: portrait) {
+  .header .countdown .days {
+    top: 52px;
+  }
+}
 @media screen and (min-width: 768px) and (orientation: portrait) {
   .header .countdown .days {
     font-size: 10rem;
-    top: 60px;
+    top: 85px;
     left: -10px;
   }
 }
@@ -194,12 +236,20 @@ ul li {
   font-family: "La Belle Aurore", cursive;
   color: #b06562;
 }
+@media screen and (min-width: 390px) and (orientation: portrait) {
+  .header .countdown .label {
+    bottom: 46px;
+    left: 120px;
+    line-height: 45px;
+    font-size: 2rem;
+  }
+}
 @media screen and (min-width: 768px) and (orientation: portrait) {
   .header .countdown .label {
-    font-size: 2rem;
-    line-height: 47px;
-    bottom: 90px;
-    left: 170px;
+    font-size: 3rem;
+    line-height: 67px;
+    bottom: 92px;
+    left: 200px;
   }
 }
 @media screen and (min-width: 1024px) and (orientation: landscape) {
@@ -240,6 +290,16 @@ nav a, nav a:focus, nav a:hover, nav a:active {
   font-size: 1.5rem;
   font-family: "La Belle Aurore", cursive;
   cursor: pointer;
+}
+@media screen and (min-width: 390px) and (orientation: portrait) {
+  nav a, nav a:focus, nav a:hover, nav a:active {
+    font-size: 3rem;
+  }
+}
+@media screen and (min-width: 414px) and (orientation: portrait) {
+  nav a, nav a:focus, nav a:hover, nav a:active {
+    font-size: 2.5rem;
+  }
 }
 @media screen and (min-width: 768px) and (orientation: portrait) {
   nav a, nav a:focus, nav a:hover, nav a:active {
@@ -302,6 +362,16 @@ section .icon {
 .story ul {
   text-align: left;
 }
+@media screen and (orientation: landscape) {
+  .story ul {
+    margin: 2rem;
+  }
+}
+@media (min-width: 667px) and (orientation: landscape) {
+  .story ul {
+    margin: 4rem;
+  }
+}
 .story strong {
   color: #5e4019;
 }
@@ -316,7 +386,17 @@ section .icon {
   }
 }
 
-.recipe span {
+@media screen and (min-width: 768px) and (orientation: portrait) {
+  ul.recipe {
+    margin: 0 7rem;
+  }
+}
+@media screen and (min-width: 1024px) and (orientation: landscape) {
+  ul.recipe {
+    margin: 0 14rem;
+  }
+}
+ul.recipe span {
   font-family: inherit;
   font-size: inherit;
   font-weight: bolder;

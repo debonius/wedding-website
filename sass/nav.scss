@@ -27,6 +27,12 @@ nav {
       font-size: 1.5rem;
       font-family: $font-primary;
       cursor: pointer;
+      @media screen and (min-width:390px) and (orientation:portrait) {
+        font-size: 3rem;
+      }
+      @media screen and (min-width:414px) and (orientation:portrait) {
+        font-size: 2.5rem;
+      }
       @media screen and (min-width: 768px) and (orientation: portrait) {
         font-size: 3rem;
       }
