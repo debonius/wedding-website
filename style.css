@@ -332,8 +332,9 @@ section .icon {
   gap: 2rem;
 }
 .photos-wrap .photo {
-  width: auto;
-  max-height: 600px;
+  width: 100%;
+  height: fit-content;
+  object-fit: contain;
   border: 1px solid white;
   border-radius: 15px;
   box-shadow: 5px 7px 20px rgba(94, 64, 25, 0.6);
