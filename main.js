@@ -6,7 +6,7 @@ labelDay1.classList.add('label');
 labelDay1.innerHTML = 'day<br>left!';
 
 const startDate = new Date();
-const endDate = new Date('01-07-2023');
+const endDate = new Date(2023,0,7,17,00);
 
 let diff = Math.round( ( ( startDate - endDate ) / (1000*3600*24) ) );
 diff *= -1;
