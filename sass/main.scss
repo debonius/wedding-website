@@ -43,6 +43,14 @@ section {
   }
 }
 
+.recipe {
+  span {
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: bolder;
+    }
+}
+
 .separator {
   max-width: 180px;
 }
@@ -74,5 +82,28 @@ section {
     // @media screen and (min-width: 1180px) and (orientation: landscape) {
     //   width: 350px;
     // }
+  }
+}
+
+.when {
+  .date {
+    font-family: "cardo", cursive;
+    color: #5e4019;
+    font-size: 1.8rem;
+    font-weight: bolder;
+}
+
+}
+
+.where {
+  strong {
+    font-size: 1.9rem;
+    font-family: 'Cardo', serif;
+    color: $brown;
+    // font-size: inherit;
+  }
+  span {
+    font-family: 'Cardo', serif;
+    font-size: 1.4rem;
   }
 }
