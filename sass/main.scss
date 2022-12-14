@@ -59,15 +59,8 @@ section {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  // @media screen and (min-width: 1180px) and (orientation: landscape) {
-  //   gap: 1rem;
-  //   flex-direction: row;
-  // }
 
   .photo {
-    // max-height: 80vh;
-    // width: auto;
-    // height: auto;
     width: 100%;
     height:fit-content;
     object-fit: contain;
@@ -82,9 +75,6 @@ section {
     @media screen and (min-width: 1024px) and (orientation: landscape) {
       width: 80%;
     }
-    // @media screen and (min-width: 1180px) and (orientation: landscape) {
-    //   width: 350px;
-    // }
   }
 }
 
@@ -103,7 +93,6 @@ section {
     font-size: 1.9rem;
     font-family: 'Cardo', serif;
     color: $brown;
-    // font-size: inherit;
   }
   span {
     font-family: 'Cardo', serif;
