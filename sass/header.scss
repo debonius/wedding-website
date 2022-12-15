@@ -18,6 +18,7 @@
   background-blend-mode: overlay;
   @media screen and (orientation: landscape) {
     background-position: top center;
+    gap: 0;
   }
   @media screen and (min-width:414px) and (orientation:portrait) {
     justify-content: space-evenly;
@@ -64,6 +65,9 @@
     font-size: 4.5rem;
     line-height: 1.2;
     color: $color-primary;
+    @media screen and (orientation:landscape) {
+      font-size: 3.5rem;
+    }
     @media screen and (min-width:390px) and (orientation:portrait) {
       font-size: 5rem;
     }

@@ -81,6 +81,7 @@ ul li {
 @media screen and (orientation: landscape) {
   .header {
     background-position: top center;
+    gap: 0;
   }
 }
 @media screen and (min-width: 414px) and (orientation: portrait) {
@@ -143,6 +144,11 @@ ul li {
   font-size: 4.5rem;
   line-height: 1.2;
   color: #b06562;
+}
+@media screen and (orientation: landscape) {
+  .header .names {
+    font-size: 3.5rem;
+  }
 }
 @media screen and (min-width: 390px) and (orientation: portrait) {
   .header .names {
