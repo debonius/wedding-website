@@ -5,7 +5,9 @@ nav {
   width: 100%;
   @media screen and (orientation: landscape) {
     position: absolute;
-    bottom: -50px;
+  }
+  @media screen and (min-width:896px) and (orientation: landscape) {
+    bottom: -30px;
   }
   @media screen and (min-width: 1280px) {
     width: 30%;
@@ -32,15 +34,6 @@ nav {
       font-family: $font-primary;
       cursor: pointer;
       @media screen and (min-width:390px) and (orientation:portrait) {
-        font-size: 3rem;
-      }
-      @media screen and (min-width:414px) and (orientation:portrait) {
-        font-size: 3.5rem;
-      }
-      @media screen and (min-width: 768px) and (orientation: portrait) {
-        font-size: 3rem;
-      }
-      @media screen and (min-width: 1024px) and (orientation: landscape) {
         font-size: 3rem;
       }
     }

@@ -23,7 +23,7 @@
   }
   @media screen and (min-width:667px) and (orientation: landscape) {
     gap: 1.2em;
-    justify-content: space-between;
+    justify-content: center;
   }
   @media screen and (min-width:414px) and (orientation:portrait) {
     justify-content: space-evenly;
@@ -31,7 +31,7 @@
   }
   @media screen and (min-width:896px) and (orientation: landscape) {
     gap: 2em;
-    justify-content: space-between;
+    justify-content: center;
     background-position: center left;
     background-size: 160%;
   }
@@ -86,9 +86,12 @@
     @media screen and (min-width:414px) and (orientation:portrait) {
       font-size: 6rem;
       line-height: 1.2;
-      }
+    }
     @media screen and (min-width: 768px) and (orientation: portrait) {
       font-size: 8rem;
+    }
+    @media screen and (min-width: 896px) and (orientation: landscape) {
+      font-size: 4rem;
     }
     @media screen and (min-width: 1024px) and (orientation: landscape) {
       font-size: 5rem;
@@ -121,6 +124,9 @@
       @media screen and (min-width: 768px) and (orientation: portrait) {
         width: 400px;
       }
+      @media screen and (min-width:896px) and (orientation: landscape) {
+        width: 200px;
+      }
       @media screen and (min-width: 1024px) and (orientation: landscape) {
         width: 400px;
       }
@@ -140,12 +146,17 @@
         top: 52px;
       }
       @media screen and (min-width:414px) and (orientation:portrait) {
-        top: 49px;
+        top: 22px;
+        left: -17px;
         font-size: 7rem;
       }
       @media screen and (min-width: 768px) and (orientation: portrait) {
         font-size: 10rem;
         top: 85px;
+        left: -10px;
+      }
+      @media screen and (min-width: 896px) and (orientation: landscape) {
+        top: 13px;
         left: -10px;
       }
       @media screen and (min-width: 1024px) and (orientation: landscape) {
@@ -183,14 +194,19 @@
         font-size: 2rem;
       }
       @media screen and (min-width:414px) and (orientation:portrait) {
-        line-height: 35px;
-        bottom: 65px;
+        line-height: 30px;
+        bottom: 93px;
+        left: 140px;
       }
       @media screen and (min-width: 768px) and (orientation: portrait) {
         font-size: 3rem;
         line-height: 67px;
         bottom: 92px;
         left: 200px;
+      }
+      @media screen and (min-width: 896px) and (orientation: landscape) {
+        bottom: 66px;
+        left: 100px;
       }
       @media screen and (min-width: 1024px) and (orientation: landscape) {
         font-size: 2rem;
