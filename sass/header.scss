@@ -9,14 +9,13 @@
   height: 100vh;
   padding: 1rem;
   margin-bottom: 3rem;
-  background-color: #ffbedd;
   background-image: url(img/flowers-bg.jpg);
+  background-color: rgb(255 255 255 / 77%);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-blend-mode: hard-light;
+  background-blend-mode: overlay;
   @media screen and (orientation: landscape) {
-    background-size: 210%;
     background-position: top center;
   }
   @media screen and (min-width:414px) and (orientation:portrait) {
@@ -113,8 +112,8 @@
       font-style: italic;
       font-weight: bolder;
       font-size: 5rem;
-      color: $color-bg;
-      text-shadow: 0 4px 28px #b06562;
+      color: white;
+      text-shadow: 0 4px 8px rgb(118 118 118);
       @media screen and (min-width:390px) and (orientation:portrait) {
         top: 52px;
       }
