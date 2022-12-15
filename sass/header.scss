@@ -50,7 +50,7 @@
   }
 
   .intro-text {
-    font-family: $font-secondary;
+    font-family: $font-primary;
     font-style: italic;
     font-size: 1rem;
     color: $brown;
@@ -73,7 +73,7 @@
 
   .names {
     display: block;
-    font-family: $font-calligraphic;
+    font-family: $font-secondary;
     font-size: 4.5rem;
     line-height: 1.2;
     color: $color-primary;
@@ -126,7 +126,7 @@
       position: relative;
       top: 37px;
       left: -4px;
-      font-family: $font-display;
+      font-family: $font-secondary;
       font-style: italic;
       font-weight: bolder;
       font-size: 5rem;
@@ -169,7 +169,7 @@
       line-height: 25px;
       font-size: 1.5rem;
       color: $brown;
-      font-family: 'Josefin Sans';
+      font-family: $font-primary;
       text-transform: lowercase;
       text-align: left;
       @media screen and (min-width:390px) and (orientation:portrait) {
