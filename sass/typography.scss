@@ -20,10 +20,6 @@ p {
   font-family: $font-primary;
   line-height: 1.5;
 
-  // @media (orientation: landscape) {
-  //   font-size: 1rem;
-  // }
-
   @media screen and (min-width: 768px) and (orientation: portrait) {
     font-size: 2rem;
   }
