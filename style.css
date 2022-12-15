@@ -65,7 +65,8 @@ ul li {
 .header {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
+  gap: 3em;
   align-items: center;
   height: 100vh;
   padding: 1rem;
@@ -109,7 +110,7 @@ ul li {
   font-family: "Cardo", serif;
   font-style: italic;
   font-size: 1rem;
-  color: #5d2c2c;
+  color: #5e4019;
 }
 @media screen and (min-width: 390px) and (orientation: portrait) {
   .header .intro-text {
@@ -139,8 +140,9 @@ ul li {
 .header .names {
   display: block;
   font-family: "Mea Culpa", cursive;
-  font-size: 3rem;
-  color: #5d2c2c;
+  font-size: 4.5rem;
+  line-height: 1.2;
+  color: #b06562;
 }
 @media screen and (min-width: 390px) and (orientation: portrait) {
   .header .names {
@@ -244,11 +246,13 @@ ul li {
   position: relative;
   bottom: 47px;
   left: 92px;
-  line-height: 27px;
-  transform: rotate(338deg);
-  font-size: 1.2rem;
-  font-family: "La Belle Aurore", cursive;
-  color: #b06562;
+  transform: rotate(348deg);
+  line-height: 25px;
+  font-size: 1.5rem;
+  color: #5e4019;
+  font-family: "Josefin Sans";
+  text-transform: lowercase;
+  text-align: left;
 }
 @media screen and (min-width: 390px) and (orientation: portrait) {
   .header .countdown .label {
@@ -300,8 +304,8 @@ nav li {
 }
 nav a, nav a:focus, nav a:hover, nav a:active {
   text-decoration: none;
-  color: #5d2c2c;
-  font-size: 1.5rem;
+  color: #5e4019;
+  font-size: 2.4rem;
   font-family: "La Belle Aurore", cursive;
   cursor: pointer;
 }

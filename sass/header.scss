@@ -4,7 +4,8 @@
 .header {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
+  gap: 3em;
   align-items: center;
   height: 100vh;
   padding: 1rem;
@@ -39,7 +40,7 @@
     font-family: $font-secondary;
     font-style: italic;
     font-size: 1rem;
-    color: $color-primary;
+    color: $brown;
     @media screen and (min-width:390px) and (orientation:portrait) {
       font-size: 1.5rem;
     }
@@ -60,7 +61,8 @@
   .names {
     display: block;
     font-family: $font-calligraphic;
-    font-size: 3rem;
+    font-size: 4.5rem;
+    line-height: 1.2;
     color: $color-primary;
     @media screen and (min-width:390px) and (orientation:portrait) {
       font-size: 5rem;
@@ -143,11 +145,13 @@
       position: relative;
       bottom: 47px;
       left: 92px;
-      line-height: 27px;
-      transform: rotate(338deg);
-      font-size: 1.2rem;
-      font-family: $font-primary;
-      color: #b06562;
+      transform: rotate(348deg);
+      line-height: 25px;
+      font-size: 1.5rem;
+      color: $brown;
+      font-family: 'Josefin Sans';
+      text-transform: lowercase;
+      text-align: left;
       @media screen and (min-width:390px) and (orientation:portrait) {
         bottom: 46px;
         left: 120px;
@@ -160,12 +164,6 @@
         bottom: 92px;
         left: 200px;
       }
-      // @media screen and (min-width: 768px) and (orientation: portrait) {
-      //   font-size: 2rem;
-      //   line-height: 47px;
-      //   bottom: 90px;
-      //   left: 170px;
-      // }
       @media screen and (min-width: 1024px) and (orientation: landscape) {
         font-size: 2rem;
         line-height: 47px;

@@ -23,8 +23,8 @@ nav {
     &:hover,
     &:active {
       text-decoration: none;
-      color: $color-primary;
-      font-size: 1.5rem;
+      color: $brown;
+      font-size: 2.4rem;
       font-family: $font-primary;
       cursor: pointer;
       @media screen and (min-width:390px) and (orientation:portrait) {
