@@ -70,7 +70,7 @@ ul li {
   height: 100vh;
   padding: 1rem;
   margin-bottom: 3rem;
-  background-color: #cb6139;
+  background-color: #ffbedd;
   background-image: url(img/flowers-bg.jpg);
   background-size: cover;
   background-position: center;
@@ -88,9 +88,19 @@ ul li {
     justify-content: space-evenly;
   }
 }
+@media screen and (min-width: 1024px) and (orientation: portrait) {
+  .header {
+    justify-content: space-between;
+  }
+}
 @media screen and (min-width: 1024px) {
   .header {
     justify-content: space-between;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .header {
+    font-size: 8rem;
   }
 }
 .header p {
@@ -152,6 +162,11 @@ ul li {
 @media screen and (min-width: 1024px) and (orientation: landscape) {
   .header .names {
     font-size: 5rem;
+  }
+}
+@media screen and (min-width: 1024px) and (orientation: portrait) {
+  .header .names {
+    font-size: 10rem;
   }
 }
 @media screen and (min-width: 1024px) and (max-height: 600px) and (orientation: landscape) {
