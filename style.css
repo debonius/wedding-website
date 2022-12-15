@@ -73,20 +73,36 @@ ul li {
   margin-bottom: 3rem;
   background-image: url(img/flowers-bg.jpg);
   background-color: rgba(255, 255, 255, 0.77);
-  background-size: cover;
-  background-position: center;
+  background-size: 300%;
+  background-position: top;
   background-repeat: no-repeat;
   background-blend-mode: overlay;
 }
 @media screen and (orientation: landscape) {
   .header {
-    background-position: top center;
     gap: 0;
+    background-position: center left;
+    background-size: 170%;
+  }
+}
+@media screen and (min-width: 667px) and (orientation: landscape) {
+  .header {
+    gap: 1.2em;
+    justify-content: space-between;
   }
 }
 @media screen and (min-width: 414px) and (orientation: portrait) {
   .header {
     justify-content: space-evenly;
+    background-size: 560%;
+  }
+}
+@media screen and (min-width: 896px) and (orientation: landscape) {
+  .header {
+    gap: 2em;
+    justify-content: space-between;
+    background-position: center left;
+    background-size: 160%;
   }
 }
 @media screen and (min-width: 1024px) and (orientation: portrait) {
@@ -157,7 +173,7 @@ ul li {
 }
 @media screen and (min-width: 414px) and (orientation: portrait) {
   .header .names {
-    font-size: 5rem;
+    font-size: 6rem;
     line-height: 1.2;
   }
 }
@@ -226,6 +242,12 @@ ul li {
     top: 52px;
   }
 }
+@media screen and (min-width: 414px) and (orientation: portrait) {
+  .header .countdown .days {
+    top: 49px;
+    font-size: 7rem;
+  }
+}
 @media screen and (min-width: 768px) and (orientation: portrait) {
   .header .countdown .days {
     font-size: 10rem;
@@ -266,6 +288,12 @@ ul li {
     left: 120px;
     line-height: 45px;
     font-size: 2rem;
+  }
+}
+@media screen and (min-width: 414px) and (orientation: portrait) {
+  .header .countdown .label {
+    line-height: 35px;
+    bottom: 65px;
   }
 }
 @media screen and (min-width: 768px) and (orientation: portrait) {
@@ -322,7 +350,7 @@ nav a, nav a:focus, nav a:hover, nav a:active {
 }
 @media screen and (min-width: 414px) and (orientation: portrait) {
   nav a, nav a:focus, nav a:hover, nav a:active {
-    font-size: 2.5rem;
+    font-size: 3.5rem;
   }
 }
 @media screen and (min-width: 768px) and (orientation: portrait) {

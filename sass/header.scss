@@ -12,16 +12,28 @@
   margin-bottom: 3rem;
   background-image: url(img/flowers-bg.jpg);
   background-color: rgb(255 255 255 / 77%);
-  background-size: cover;
-  background-position: center;
+  background-size: 300%;
+  background-position: top;
   background-repeat: no-repeat;
   background-blend-mode: overlay;
   @media screen and (orientation: landscape) {
-    background-position: top center;
     gap: 0;
+    background-position: center left;
+    background-size: 170%;
+  }
+  @media screen and (min-width:667px) and (orientation: landscape) {
+    gap: 1.2em;
+    justify-content: space-between;
   }
   @media screen and (min-width:414px) and (orientation:portrait) {
     justify-content: space-evenly;
+    background-size: 560%;
+  }
+  @media screen and (min-width:896px) and (orientation: landscape) {
+    gap: 2em;
+    justify-content: space-between;
+    background-position: center left;
+    background-size: 160%;
   }
   @media screen and (min-width:1024px) and (orientation:portrait) {
     justify-content: space-between;
@@ -72,7 +84,7 @@
       font-size: 5rem;
     }
     @media screen and (min-width:414px) and (orientation:portrait) {
-      font-size: 5rem;
+      font-size: 6rem;
       line-height: 1.2;
       }
     @media screen and (min-width: 768px) and (orientation: portrait) {
@@ -123,6 +135,10 @@
       @media screen and (min-width:390px) and (orientation:portrait) {
         top: 52px;
       }
+      @media screen and (min-width:414px) and (orientation:portrait) {
+        top: 49px;
+        font-size: 7rem;
+      }
       @media screen and (min-width: 768px) and (orientation: portrait) {
         font-size: 10rem;
         top: 85px;
@@ -161,6 +177,10 @@
         left: 120px;
         line-height: 45px;
         font-size: 2rem;
+      }
+      @media screen and (min-width:414px) and (orientation:portrait) {
+        line-height: 35px;
+        bottom: 65px;
       }
       @media screen and (min-width: 768px) and (orientation: portrait) {
         font-size: 3rem;
