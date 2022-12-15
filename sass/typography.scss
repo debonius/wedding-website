@@ -2,19 +2,26 @@
 @import 'fonts';
 
 h1, h2 {
+  margin: 2rem auto;
   font-family: $font-secondary;
-  font-size: 2.5rem;
-  line-height: 1.3;
+  font-size: 3rem;
+  line-height: 1;
   color: $black;
   span {
     display: block;
-    font-size: 2rem;
+    font-size: calc(1em*.5);
     font-family: $font-primary;
     text-transform: lowercase;
   }
 }
 
-p {
+h3 {
+  font-size: 2.5rem;
+  font-family: $font-secondary;
+  color: $black;
+}
+
+p, ul {
   margin: 2rem auto;
   font-size: 1.5rem;
   font-family: $font-primary;
@@ -30,7 +37,6 @@ p {
 
 span {
   font-family: $font-primary;
-  color: $brown;
   @media screen and (min-width: 768px) and (orientation: portrait) {
     font-size: 2.5rem;
   }
@@ -41,7 +47,7 @@ span {
 
 ul {
   li {
-    font-size: 1.3rem;
+    font-size: inherit;
     padding-bottom: 15px;
     font-style: italic;
     }

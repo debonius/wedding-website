@@ -15,17 +15,19 @@ body {
 main {
   max-width: 1280px;
   margin: 2rem auto;
-  padding: 2rem;
+  padding-left: 1.7rem;
+  padding-right: 1.7rem;
 }
 
 section {
-  span {
-    color: $brown;
-  }
   .icon {
     width: 20px;
     height: 20px;
   }
+}
+
+li {
+  list-style-type: square;
 }
 
 .story {
@@ -47,6 +49,10 @@ section {
       font-size: 2.1rem;
     }
   }
+  &__highlight {
+    font-family: inherit;
+    font-size: inherit;
+    }
 }
 
 ul.recipe {
@@ -57,10 +63,10 @@ ul.recipe {
     margin: 0 14rem;
   }
   span {
-    font-family: inherit;
     font-size: inherit;
     font-weight: bolder;
-    }
+    color: $brown;
+  }
 }
 
 .separator {
@@ -102,12 +108,12 @@ ul.recipe {
 
 .where {
   strong {
-    font-size: 1.9rem;
+    font-size: 2rem;
     font-family: 'Cardo', serif;
     color: $brown;
   }
   span {
     font-family: 'Cardo', serif;
-    font-size: 1.4rem;
+    font-size: inherit;
   }
 }

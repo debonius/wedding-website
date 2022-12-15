@@ -5,7 +5,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 3em;
+  gap: .7em;
   align-items: center;
   height: 100vh;
   padding: 1rem;
@@ -52,7 +52,7 @@
   .intro-text {
     font-family: $font-primary;
     font-style: italic;
-    font-size: 1rem;
+    font-size: 1.3rem;
     color: $brown;
     @media screen and (min-width:390px) and (orientation:portrait) {
       font-size: 1.5rem;
@@ -111,6 +111,10 @@
     .flowers-frame {
       position: absolute;
       width: 200px;
+      @media screen and (orientation:landscape) {
+        position: absolute;
+        width: 170px;
+      }
       @media screen and (min-width:390px) and (orientation:portrait) {
         width: 270px;
       }
@@ -124,8 +128,8 @@
 
     .days {
       position: relative;
-      top: 37px;
-      left: -4px;
+      top: 17px;
+      left: -10px;
       font-family: $font-secondary;
       font-style: italic;
       font-weight: bolder;
@@ -163,14 +167,14 @@
 
     .label {
       position: relative;
-      bottom: 47px;
+      bottom: 64px;
       left: 92px;
-      transform: rotate(348deg);
-      line-height: 25px;
-      font-size: 1.5rem;
+      transform: rotate(349deg);
+      line-height: 21px;
+      font-size: 1.3rem;
       color: $brown;
       font-family: $font-primary;
-      text-transform: lowercase;
+      text-transform: uppercase;
       text-align: left;
       @media screen and (min-width:390px) and (orientation:portrait) {
         bottom: 46px;

@@ -3,6 +3,10 @@
 
 nav {
   width: 100%;
+  @media screen and (orientation: landscape) {
+    position: absolute;
+    bottom: -50px;
+  }
   @media screen and (min-width: 1280px) {
     width: 30%;
   }
@@ -24,7 +28,7 @@ nav {
     &:active {
       text-decoration: none;
       color: $brown;
-      font-size: 2.4rem;
+      font-size: 2rem;
       font-family: $font-primary;
       cursor: pointer;
       @media screen and (min-width:390px) and (orientation:portrait) {
