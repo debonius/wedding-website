@@ -91,16 +91,26 @@ ul li {
     background-size: 170%;
   }
 }
-@media screen and (min-width: 667px) and (orientation: landscape) {
+@media screen and (min-width: 360px) and (orientation: portrait) {
   .header {
-    gap: 1.2em;
-    justify-content: center;
+    background-size: 380%;
+  }
+}
+@media screen and (min-width: 390px) and (orientation: portrait) {
+  .header {
+    background-size: 360%;
   }
 }
 @media screen and (min-width: 414px) and (orientation: portrait) {
   .header {
     justify-content: space-evenly;
     background-size: 560%;
+  }
+}
+@media screen and (min-width: 667px) and (orientation: landscape) {
+  .header {
+    gap: 1.2em;
+    justify-content: center;
   }
 }
 @media screen and (min-width: 896px) and (orientation: landscape) {
@@ -111,19 +121,36 @@ ul li {
     background-size: 160%;
   }
 }
-@media screen and (min-width: 1024px) and (orientation: portrait) {
+@media screen and (min-width: 912px) and (orientation: portrait) {
   .header {
-    justify-content: space-between;
+    background-size: 370%;
   }
 }
 @media screen and (min-width: 1024px) {
   .header {
-    justify-content: space-between;
+    justify-content: center;
   }
 }
-@media screen and (min-width: 1280px) {
+@media (horizontal-viewport-segments: 2) {
   .header {
-    font-size: 8rem;
+    justify-content: center;
+    background-size: cover;
+  }
+}
+@media (vertical-viewport-segments: 2) {
+  .header {
+    flex-direction: row-reverse;
+    gap: 16em;
+  }
+}
+@media screen and (min-width: 1180px) and (orientation: landscape) {
+  .header {
+    gap: 5em;
+  }
+}
+@media screen and (min-width: 1368px) and (orientation: landscape) {
+  .header {
+    gap: 4em;
   }
 }
 .header p {
@@ -160,6 +187,12 @@ ul li {
     margin-top: 15px;
   }
 }
+@media (vertical-viewport-segments: 2) {
+  .header .intro-text {
+    max-width: 30vw;
+    text-align: left;
+  }
+}
 .header .names {
   display: block;
   font-family: "Mea Culpa", cursive;
@@ -174,7 +207,9 @@ ul li {
 }
 @media screen and (min-width: 390px) and (orientation: portrait) {
   .header .names {
-    font-size: 5rem;
+    font-size: 6rem;
+    top: 20px;
+    left: -17px;
   }
 }
 @media screen and (min-width: 414px) and (orientation: portrait) {
@@ -191,6 +226,7 @@ ul li {
 @media screen and (min-width: 896px) and (orientation: landscape) {
   .header .names {
     font-size: 4rem;
+    left: -5px;
   }
 }
 @media screen and (min-width: 1024px) and (orientation: landscape) {
@@ -208,11 +244,27 @@ ul li {
     margin-bottom: 40px;
   }
 }
+@media screen and (min-width: 1368px) and (orientation: landscape) {
+  .header .names {
+    font-size: 8rem;
+  }
+}
+@media (horizontal-viewport-segments: 2) {
+  .header .names {
+    font-size: 6rem;
+    line-height: 1.2;
+  }
+}
 .header .countdown {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+@media (horizontal-viewport-segments: 2) {
+  .header .countdown {
+    margin-top: 21rem;
+  }
 }
 .header .countdown .flowers-frame {
   position: absolute;
@@ -229,6 +281,11 @@ ul li {
     width: 270px;
   }
 }
+@media screen and (min-width: 740px) and (orientation: landscape) {
+  .header .countdown .flowers-frame {
+    width: 200px;
+  }
+}
 @media screen and (min-width: 768px) and (orientation: portrait) {
   .header .countdown .flowers-frame {
     width: 400px;
@@ -241,7 +298,7 @@ ul li {
 }
 @media screen and (min-width: 1024px) and (orientation: landscape) {
   .header .countdown .flowers-frame {
-    width: 400px;
+    width: 360px;
   }
 }
 .header .countdown .days {
@@ -259,9 +316,14 @@ ul li {
   animation-iteration-count: infinite;
   animation-direction: alternate;
 }
+@media screen and (min-width: 360px) and (orientation: portrait) {
+  .header .countdown .days {
+    top: 10px;
+  }
+}
 @media screen and (min-width: 390px) and (orientation: portrait) {
   .header .countdown .days {
-    top: 52px;
+    font-size: 6rem;
   }
 }
 @media screen and (min-width: 414px) and (orientation: portrait) {
@@ -271,11 +333,28 @@ ul li {
     font-size: 7rem;
   }
 }
+@media screen and (min-width: 740px) and (orientation: landscape) {
+  .header .countdown .days {
+    top: 12px;
+  }
+}
 @media screen and (min-width: 768px) and (orientation: portrait) {
   .header .countdown .days {
     font-size: 10rem;
-    top: 85px;
+    top: 25px;
     left: -10px;
+  }
+}
+@media screen and (min-width: 820px) and (orientation: portrait) {
+  .header .countdown .days {
+    top: 23px;
+  }
+}
+@media screen and (min-width: 844px) and (orientation: landscape) {
+  .header .countdown .days {
+    font-size: 4rem;
+    top: 14px;
+    left: -7px;
   }
 }
 @media screen and (min-width: 896px) and (orientation: landscape) {
@@ -286,8 +365,8 @@ ul li {
 }
 @media screen and (min-width: 1024px) and (orientation: landscape) {
   .header .countdown .days {
-    font-size: 10rem;
-    top: 60px;
+    font-size: 9rem;
+    top: 20px;
     left: -10px;
   }
 }
@@ -313,10 +392,10 @@ ul li {
 }
 @media screen and (min-width: 390px) and (orientation: portrait) {
   .header .countdown .label {
-    bottom: 46px;
+    bottom: 77px;
     left: 120px;
-    line-height: 45px;
-    font-size: 2rem;
+    line-height: 30px;
+    font-size: 1.7rem;
   }
 }
 @media screen and (min-width: 414px) and (orientation: portrait) {
@@ -326,26 +405,43 @@ ul li {
     left: 140px;
   }
 }
+@media screen and (min-width: 740px) and (orientation: landscape) {
+  .header .countdown .label {
+    font-size: 1.2rem;
+  }
+}
 @media screen and (min-width: 768px) and (orientation: portrait) {
   .header .countdown .label {
-    font-size: 3rem;
-    line-height: 67px;
-    bottom: 92px;
+    font-size: 2.5rem;
+    line-height: 40px;
+    bottom: 130px;
     left: 200px;
+  }
+}
+@media screen and (min-width: 820px) and (orientation: portrait) {
+  .header .countdown .label {
+    font-size: 2.5rem;
+    line-height: 40px;
+    bottom: 133px;
+  }
+}
+@media screen and (min-width: 844px) and (orientation: landscape) {
+  .header .countdown .label {
+    bottom: 54px;
   }
 }
 @media screen and (min-width: 896px) and (orientation: landscape) {
   .header .countdown .label {
-    bottom: 66px;
+    bottom: 56px;
     left: 100px;
   }
 }
 @media screen and (min-width: 1024px) and (orientation: landscape) {
   .header .countdown .label {
     font-size: 2rem;
-    line-height: 47px;
-    bottom: 90px;
-    left: 170px;
+    line-height: 30px;
+    bottom: 115px;
+    left: 180px;
   }
 }
 
@@ -362,6 +458,7 @@ nav {
 @media screen and (orientation: landscape) {
   nav {
     position: absolute;
+    bottom: -40px;
   }
 }
 @media screen and (min-width: 896px) and (orientation: landscape) {
@@ -391,7 +488,7 @@ nav a, nav a:focus, nav a:hover, nav a:active {
 }
 @media screen and (min-width: 390px) and (orientation: portrait) {
   nav a, nav a:focus, nav a:hover, nav a:active {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
 }
 nav a:hover {
