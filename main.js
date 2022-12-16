@@ -21,3 +21,6 @@ if (diff == 1) {
   label.remove();
   container.appendChild(labelDay1);
 }
+
+let audio = new Audio('bg.mp3');
+audio.play();
