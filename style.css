@@ -505,8 +505,8 @@ nav a, nav a:focus, nav a:hover, nav a:active {
   }
 }
 nav a:hover {
-  color: #faebd7;
-  text-shadow: 0 4px 28px #b06562;
+  color: #b06562;
+  transform: translateX(-10px);
 }
 
 a.btn-primary, a.btn-primary:active, a.btn-primary:hover, a.btn-primary:visited {

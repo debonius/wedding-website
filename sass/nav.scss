@@ -45,8 +45,8 @@ nav {
       }
     }
     &:hover {
-      color: $color-bg;
-      text-shadow: 0 4px 28px #b06562;
+      color: $color-primary;
+      transform: translateX(-10px);
     }
   }
 
