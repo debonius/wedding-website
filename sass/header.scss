@@ -67,12 +67,20 @@
     gap: 4em;
   }
 
+  .audio-icon {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 40px;
+    margin: 10px;
+    cursor: pointer;
+  }
+
   p {
     margin: 0;
   }
 
   .intro-text {
-    // margin-top: 1em;
     font-family: $font-primary;
     font-style: italic;
     font-size: 1.3rem;

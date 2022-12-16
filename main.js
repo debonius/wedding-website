@@ -22,5 +22,11 @@ if (diff == 1) {
   container.appendChild(labelDay1);
 }
 
-let audio = new Audio('audio/bg.mp3');
-audio.play();
+const audio = new Audio('audio/bg.mp3');
+const playBtn = document.getElementById('playBtn');
+playBtn.addEventListener('click', function() {
+  audio.paused? audio.play() : audio.paused = true;
+  playBtn.remove();
+  // audio.muted? audio.muted = false : audio.muted = true;
+  // playBtn.classList.toggle('sound-is-active');
+});
