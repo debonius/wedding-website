@@ -52,9 +52,9 @@ li {
   &__highlight {
     font-family: inherit;
     font-size: inherit;
-    }
-    @media screen and (min-width: 992px) {
-      display: inline;
+      @media screen and (min-width: 992px) {
+        display: inline;
+      }
     }
 }
 

@@ -585,7 +585,7 @@ li {
   font-size: inherit;
 }
 @media screen and (min-width: 992px) {
-  .story {
+  .story__highlight {
     display: inline;
   }
 }
