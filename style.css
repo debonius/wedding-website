@@ -71,11 +71,11 @@ ul li {
 .header {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   gap: 0.7em;
   align-items: center;
   height: 100vh;
-  padding: 1rem;
+  padding: 0.5em;
   margin-bottom: 3rem;
   background-image: url(img/flowers-bg.jpg);
   background-color: rgba(255, 255, 255, 0.77);
@@ -96,6 +96,12 @@ ul li {
     background-size: 380%;
   }
 }
+@media screen and (min-width: 375px) and (orientation: portrait) {
+  .header {
+    justify-content: flex-start;
+    gap: 2em;
+  }
+}
 @media screen and (min-width: 390px) and (orientation: portrait) {
   .header {
     background-size: 360%;
@@ -103,8 +109,8 @@ ul li {
 }
 @media screen and (min-width: 414px) and (orientation: portrait) {
   .header {
-    justify-content: space-evenly;
-    background-size: 560%;
+    justify-content: initial;
+    background-size: 400%;
   }
 }
 @media screen and (min-width: 667px) and (orientation: landscape) {
@@ -196,7 +202,7 @@ ul li {
 .header .names {
   display: block;
   font-family: "Mea Culpa", cursive;
-  font-size: 4.5rem;
+  font-size: 3rem;
   line-height: 1.2;
   color: #b06562;
 }
@@ -214,7 +220,7 @@ ul li {
 }
 @media screen and (min-width: 414px) and (orientation: portrait) {
   .header .names {
-    font-size: 6rem;
+    font-size: 4rem;
     line-height: 1.2;
   }
 }
@@ -261,9 +267,14 @@ ul li {
   justify-content: center;
   align-items: center;
 }
+@media (vertical-viewport-segments: 2) and (min-width: 720px) {
+  .header .countdown {
+    margin-top: 20rem;
+  }
+}
 @media (horizontal-viewport-segments: 2) {
   .header .countdown {
-    margin-top: 21rem;
+    margin-top: 0;
   }
 }
 .header .countdown .flowers-frame {
@@ -310,7 +321,7 @@ ul li {
   font-weight: bolder;
   font-size: 5rem;
   color: white;
-  text-shadow: 0 4px 8px rgb(118, 118, 118);
+  text-shadow: #767676 0 4px 8px;
   animation-name: grow;
   animation-duration: 1s;
   animation-iteration-count: infinite;
@@ -384,7 +395,7 @@ ul li {
   left: 92px;
   transform: rotate(349deg);
   line-height: 21px;
-  font-size: 1.3rem;
+  font-size: 1rem;
   color: #5e4019;
   font-family: "Cardo", serif;
   text-transform: uppercase;

@@ -4,11 +4,11 @@
 .header {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   gap: .7em;
   align-items: center;
   height: 100vh;
-  padding: 1rem;
+  padding: .5em;
   margin-bottom: 3rem;
   background-image: url(img/flowers-bg.jpg);
   background-color: rgb(255 255 255 / 77%);
@@ -24,12 +24,16 @@
   @media screen and (min-width:360px) and (orientation:portrait) {
     background-size: 380%;
   }
+  @media screen and (min-width:375px) and (orientation:portrait) {
+    justify-content: flex-start;
+    gap: 2em;
+  }
   @media screen and (min-width:390px) and (orientation:portrait) {
     background-size: 360%;
   }
   @media screen and (min-width:414px) and (orientation:portrait) {
-    justify-content: space-evenly;
-    background-size: 560%;
+    justify-content: initial;
+    background-size: 400%;
   }
   @media screen and (min-width:667px) and (orientation: landscape) {
     gap: 1.2em;
@@ -67,6 +71,7 @@
   }
 
   .intro-text {
+    // margin-top: 1em;
     font-family: $font-primary;
     font-style: italic;
     font-size: 1.3rem;
@@ -95,7 +100,7 @@
   .names {
     display: block;
     font-family: $font-secondary;
-    font-size: 4.5rem;
+    font-size: 3rem;
     line-height: 1.2;
     color: $color-primary;
     @media screen and (orientation:landscape) {
@@ -107,7 +112,7 @@
       left: -17px;
     }
     @media screen and (min-width:414px) and (orientation:portrait) {
-      font-size: 6rem;
+      font-size: 4rem;
       line-height: 1.2;
     }
     @media screen and (min-width: 768px) and (orientation: portrait) {
@@ -141,8 +146,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    @media (vertical-viewport-segments: 2) and (min-width: 720px) {
+      margin-top: 20rem;
+    }
     @media (horizontal-viewport-segments: 2) {
-      margin-top: 21rem;
+      margin-top: 0;
     }
 
     .flowers-frame {
@@ -178,7 +186,7 @@
       font-weight: bolder;
       font-size: 5rem;
       color: white;
-      text-shadow: 0 4px 8px rgb(118 118 118);
+      text-shadow: #767676 0 4px 8px;
       @media screen and (min-width:360px) and (orientation:portrait) {
         top: 10px;
       }
@@ -233,7 +241,7 @@
       left: 92px;
       transform: rotate(349deg);
       line-height: 21px;
-      font-size: 1.3rem;
+      font-size: 1rem;
       color: $brown;
       font-family: $font-primary;
       text-transform: uppercase;
