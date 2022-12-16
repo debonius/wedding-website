@@ -71,8 +71,8 @@ ul li {
 .header {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  gap: 0.7em;
+  justify-content: start;
+  gap: 1em;
   align-items: center;
   height: 100vh;
   padding: 0.5em;
@@ -111,6 +111,7 @@ ul li {
   .header {
     justify-content: initial;
     background-size: 400%;
+    gap: 0;
   }
 }
 @media screen and (min-width: 667px) and (orientation: landscape) {
@@ -213,14 +214,13 @@ ul li {
 }
 @media screen and (min-width: 390px) and (orientation: portrait) {
   .header .names {
-    font-size: 6rem;
+    font-size: 4rem;
     top: 20px;
     left: -17px;
   }
 }
 @media screen and (min-width: 414px) and (orientation: portrait) {
   .header .names {
-    font-size: 4rem;
     line-height: 1.2;
   }
 }
@@ -317,7 +317,6 @@ ul li {
   top: 17px;
   left: -10px;
   font-family: "Mea Culpa", cursive;
-  font-style: italic;
   font-weight: bolder;
   font-size: 5rem;
   color: white;
@@ -406,7 +405,7 @@ ul li {
     bottom: 77px;
     left: 120px;
     line-height: 30px;
-    font-size: 1.7rem;
+    font-size: 1.4rem;
   }
 }
 @media screen and (min-width: 414px) and (orientation: portrait) {
@@ -483,9 +482,10 @@ nav {
   }
 }
 nav ul {
+  margin: 0;
   display: flex;
   width: 100%;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 nav li {
   list-style-type: none;
