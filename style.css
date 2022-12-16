@@ -12,7 +12,7 @@ html, *, *::before, *::after {
 }
 
 h1, h2 {
-  margin: 2rem auto;
+  margin: 4rem auto 2rem;
   font-family: "Mea Culpa", cursive;
   font-size: 3rem;
   line-height: 1;
