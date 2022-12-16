@@ -100,8 +100,8 @@ ul li {
 }
 @media screen and (min-width: 375px) and (orientation: portrait) {
   .header {
-    justify-content: flex-start;
-    gap: 2em;
+    justify-content: center;
+    gap: 3em;
   }
 }
 @media screen and (min-width: 390px) and (orientation: portrait) {
@@ -164,11 +164,16 @@ ul li {
 }
 .header .audio-icon {
   position: fixed;
-  top: 0;
+  top: 5%;
   right: 0;
   width: 40px;
   margin: 10px;
   cursor: pointer;
+}
+@media screen and (min-width: 390px) and (orientation: portrait) {
+  .header .audio-icon {
+    top: 13%;
+  }
 }
 @media screen and (min-width: 414px) and (orientation: portrait) {
   .header .audio-icon {
