@@ -118,7 +118,7 @@ ul.recipe {
   a {
     font-family: 'Cardo', serif;
     font-size: inherit;
-    text-decoration: none;
+    // text-decoration: none;
     color: $brown;
     &.icon-pin::before {
       content: '';

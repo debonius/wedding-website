@@ -681,7 +681,6 @@ ul.recipe span {
 .where a {
   font-family: "Cardo", serif;
   font-size: inherit;
-  text-decoration: none;
   color: #5e4019;
 }
 .where a.icon-pin::before, .where a.icon-parking::before {
