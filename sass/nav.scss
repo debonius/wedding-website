@@ -2,16 +2,12 @@
 @import 'fonts';
 
 nav {
-  width: 100%;
   padding-bottom: 10px;
   @media screen and (orientation: landscape) {
-    // position: absolute;
-    // bottom: -40px;
-    padding-bottom: 15px;
+    position: absolute;
+    right: 1em;
+    bottom: 0;
   }
-  // @media screen and (min-width:896px) and (orientation: landscape) {
-  //   bottom: -30px;
-  // }
   @media screen and (min-width: 1280px) {
     width: 30%;
   }
@@ -21,6 +17,7 @@ nav {
     display: flex;
     width: 100%;
     justify-content: space-between;
+    gap: 15px;
     @media screen and (min-width: 800px) {
       justify-content: space-evenly;
     }
@@ -40,6 +37,9 @@ nav {
       font-size: 2rem;
       font-family: $font-primary;
       cursor: pointer;
+      @media screen and (orientation:landscape) {
+        font-size: 1.7rem;
+      }
       @media screen and (min-width:390px) and (orientation:portrait) {
         font-size: 2.5rem;
       }
