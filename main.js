@@ -22,5 +22,5 @@ if (diff == 1) {
   container.appendChild(labelDay1);
 }
 
-let audio = new Audio('bg.mp3');
+let audio = new Audio('audio/bg.mp3');
 audio.play();
