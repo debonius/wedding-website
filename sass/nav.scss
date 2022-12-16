@@ -3,15 +3,15 @@
 
 nav {
   width: 100%;
-  // position: absolute;
-  // bottom: -40px;
+  padding-bottom: 10px;
   @media screen and (orientation: landscape) {
-    position: absolute;
-    bottom: -40px;
+    // position: absolute;
+    // bottom: -40px;
+    padding-bottom: 15px;
   }
-  @media screen and (min-width:896px) and (orientation: landscape) {
-    bottom: -30px;
-  }
+  // @media screen and (min-width:896px) and (orientation: landscape) {
+  //   bottom: -30px;
+  // }
   @media screen and (min-width: 1280px) {
     width: 30%;
   }
@@ -21,6 +21,9 @@ nav {
     display: flex;
     width: 100%;
     justify-content: space-between;
+    @media screen and (min-width: 800px) {
+      justify-content: space-evenly;
+    }
   }
 
   li {
