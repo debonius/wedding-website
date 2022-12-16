@@ -1,8 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&family=Gudea&family=Josefin+Sans:wght@300;700&family=La+Belle+Aurore&family=Mea+Culpa&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&family=Gudea&family=Josefin+Sans:wght@300;700&family=La+Belle+Aurore&family=Mea+Culpa&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&family=Gudea&family=Josefin+Sans:wght@300;700&family=La+Belle+Aurore&family=Mea+Culpa&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&family=Gudea&family=Josefin+Sans:wght@300;700&family=La+Belle+Aurore&family=Mea+Culpa&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&family=Gudea&family=Josefin+Sans:wght@300;700&family=La+Belle+Aurore&family=Mea+Culpa&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&family=Mea+Culpa&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&family=Mea+Culpa&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&family=Mea+Culpa&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&family=Mea+Culpa&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&family=Mea+Culpa&display=swap");
 html, *, *::before, *::after {
   box-sizing: border-box;
   padding: 0;
@@ -145,7 +145,8 @@ ul li {
 }
 @media screen and (min-width: 1024px) {
   .header {
-    justify-content: center;
+    justify-content: flex-start;
+    gap: 7em;
   }
 }
 @media (horizontal-viewport-segments: 2) {
@@ -158,16 +159,6 @@ ul li {
   .header {
     flex-direction: row-reverse;
     gap: 16em;
-  }
-}
-@media screen and (min-width: 1180px) and (orientation: landscape) {
-  .header {
-    gap: 5em;
-  }
-}
-@media screen and (min-width: 1368px) and (orientation: landscape) {
-  .header {
-    gap: 4em;
   }
 }
 .header .audio-icon {
@@ -687,9 +678,25 @@ ul.recipe span {
   font-family: "Cardo", serif;
   color: #5e4019;
 }
-.where span {
+.where a {
   font-family: "Cardo", serif;
   font-size: inherit;
+  text-decoration: none;
+  color: #5e4019;
+}
+.where a.icon-pin::before, .where a.icon-parking::before {
+  content: "";
+  background-image: url(img/pin.png);
+  width: 30px;
+  height: 30px;
+  background-size: 30px 30px;
+  display: inline-block;
+  position: relative;
+  top: 5px;
+  right: 5px;
+}
+.where a.icon-parking::before {
+  background-image: url(img/parking.png);
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -115,8 +115,25 @@ ul.recipe {
     font-family: 'Cardo', serif;
     color: $brown;
   }
-  span {
+  a {
     font-family: 'Cardo', serif;
     font-size: inherit;
+    text-decoration: none;
+    color: $brown;
+    &.icon-pin::before {
+      content: '';
+      background-image: url(img/pin.png);
+      width: 30px;
+      height: 30px;
+      background-size: 30px 30px;
+      display: inline-block;
+      position: relative;
+      top: 5px;
+      right: 5px;
+    }
+    &.icon-parking::before {
+      @extend .icon-pin;
+      background-image: url(img/parking.png);
+    }
   }
 }
