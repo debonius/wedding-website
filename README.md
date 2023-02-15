@@ -1,6 +1,8 @@
 # Wedding Project
 
-[Live page](https://ielenatiffania.gitlab.io/wedding-project/)
+Webpage displays a countdown of days left to the wedding of Tiffany & Justin and provides useful info for the guests.
+
+[Live page](https://justinandtiffania.com/)
 
 ## Getting started
 
